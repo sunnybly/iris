@@ -8,14 +8,14 @@
             self.balance=balance
         def deposite(self,amt)
             self.balance=self.balance+amt
-            print(\"Balance After Deposite Is:\",self.balance)
+            print("Balance After Deposite Is:",self.balance)
         def withdrawal(self,amt)
             if amt>self.balance
-                print(\"Insufficient Balance!!!!!Cannot Perform This Operation\")
+                print("Insufficient Balance!!!!!Cannot Perform This Operation")
                 sys.exit()
             else:    
                 self.balance=self.balance-amt
-                print(\"Balance After Withdrawal Is:\",self.balance)
+                print("Balance After Withdrawal Is:",self.balance)
     print("Welcome To!!!",Customer.bank_name)
     name=input("Enter Your Name:")
     c=Customer(name)
